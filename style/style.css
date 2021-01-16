@@ -5,6 +5,16 @@
     --primary-3: hsl(227, 10%, 46%);
 
     --neutral-1: hsl(0, 0%, 59%);
+
+    --font-main: 'Kumbh Sans', sans-serif;
 }
 
+
+/* LAYOUT*/
+
+body 
+{
+    font-family: var(--font-main);
+    font-size: 18px;
+}
 
