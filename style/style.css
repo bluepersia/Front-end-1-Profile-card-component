@@ -7,14 +7,124 @@
     --neutral-1: hsl(0, 0%, 59%);
 
     --font-main: 'Kumbh Sans', sans-serif;
+
+    --pattern-size-neg: -489px;
 }
 
 
 /* LAYOUT*/
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body 
 {
     font-family: var(--font-main);
     font-size: 18px;
+
+    background-image: url("../images/bg-pattern-top.svg"), url("../images//bg-pattern-bottom.svg");
+    background-position: top var(--pattern-size-neg) left var(--pattern-size-neg), bottom var(--pattern-size-neg) right var(--pattern-size-neg);
+    background-repeat: no-repeat, no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    color: var(--primary-2);
+    background-color: var(--primary-1);
 }
 
+
+.challenge 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.card 
+{
+    background-color: white;
+    width: 86.66%;
+    max-width: 350px;
+
+    background-image:url("../images/bg-pattern-card.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+
+    border-radius: 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img 
+{
+    border-radius: 50%;
+    border: 0.3em solid white;
+    margin: 4.88em auto 0.5em;
+}
+
+
+.profile-info 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 1.5em;
+}
+
+
+.profile-info-main 
+{
+    margin-bottom: 0.4em;
+}
+.profile-info-name 
+{
+    font-weight: 700;
+}
+
+
+.profile-info-age 
+{
+    color: var(--neutral-1);
+    margin-left: 0.2em;
+}
+
+
+
+.profile-info-location 
+{
+    font-size: 0.91rem;
+    color: var(--neutral-1);
+}
+
+
+.profile-stats 
+{
+    width: 100%;
+    border-top: solid 0.1em var(--neutral-1);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    text-align: center;
+}
+
+
+
+.profile-stat-value 
+{
+    font-weight: 900;
+    margin-bottom: 0.4em;
+}
+
+
+.profile-stat-label 
+{
+    color: var(--neutral-1);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+}
