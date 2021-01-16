@@ -25,7 +25,7 @@ body
     font-size: 18px;
 
     background-image: url("../images/bg-pattern-top.svg"), url("../images//bg-pattern-bottom.svg");
-    background-position: top var(--pattern-size-neg) left var(--pattern-size-neg), bottom var(--pattern-size-neg) right var(--pattern-size-neg);
+    background-position: calc(100% - 50vw) calc(100% - 50vh), calc(0% + 50vw) calc(0% + 50vh);
     background-repeat: no-repeat, no-repeat;
 
     display: flex;
