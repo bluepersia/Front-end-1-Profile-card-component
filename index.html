@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-  Victor Crest
-  26
-  London
+  <div class="card">
 
-  80K
-  Followers
+    <img class="profile-img" src="images/image-victor.jpg" alt='Victor Crest' />
 
-  803K
-  Likes
+    <div class="profile-info">
+      <p><span class="profile-info-name">Victor Crest</span> <span class="profile-info-age">26</span></p>
+      <p class="profile-info-location">London</p>
+    </div>
 
-  1.4K
-  Photos
+    <div>
+
+      <div class="profile-stat">
+        <p class="profile-stat-value">80K</p>
+        <p class="profile-stat-label">Followers</p>
+      </div>
+
+      <div class="profile-stat">
+        <p class="profile-stat-value">803K</p>
+        <p class="profile-stat-label">Likes</p>
+      </div>
+
+      <div class="profile-stat">
+        <p class="profile-stat-value">1.4K</p>
+        <p class="profile-stat-label">Photos</p>
+      </div>
+
+
+
+    </div>
+
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
